@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+.navbar {
+  background: #85d9bf;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color: #0f344b;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-text {
+  color: #fff;
+  font-weight: lighter;
+}
+
+.get-started-btn {
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 3px 0;
+  width: 250px;
+  max-width: 100%;
+  margin: 20px auto 120px auto;
+  display: block;
+  transition: all 0.25s;
+}
+
+.get-started-btn:hover {
+  background: #85d9bf;
+  color: #646464;
+}
+
+/*--- General positioning for background picture on launch screen ---*/
+.header {
+  background-image: url("images/header-background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Styling to mute the header image */
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 6, 24, 0.6);
+}
+
+/* Personal description & welcome */
+/* TODO: need to refactor html with "welcome" instead of "description" */
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+
+.description h1 {
+  font-size: 50px;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #fff;
+}
+
+.description p {
+  color: #fff;
+  line-height: 1.5;
+}
+
+.description button {
+  border: 1px solid #56b8de;
+  background: #56b8de;
+  border-radius: 0;
+  color: #fff;
+}
+
+.description button:hover {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #000;
+}
+
+@media screen and (min-width: 931px) {
+  .description p {
+    font-size: 1.3rem;
+  }
+
+  .description h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 930px) {
+  .description p {
+    font-size: 0.8rem;
+  }
+
+  .description h1 {
+    font-size: 2rem;
+  }
+}
+.blockquote {
+  font-weight: 400;
+  font-family: "Operator Mono", "Courier New", monospace;
+  font-style: italic;
+  padding: 80px 0px 24px 0px;
+  margin: 50px;
+}
+
+.blockquote-footer {
+  font-style: normal;
+}
+
+@media screen and (min-width: 931px) {
+  .blockquote {
+    font-size: 26px;
+  }
+
+  .blockquote-footer {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .blockquote {
+    font-size: 18px;
+  }
+
+  .blockquote-footer {
+    font-size: 85%;
+  }
+}
+.section-header {
+  font-family: "Operator Mono", "Courier New", monospace;
+  font-style: italic;
+}
+
+/* footer styles */
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+.card {
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  margin-top: 24px;
+  background: transparent;
+}
+
+.card-group {
+  margin: 30px 12px 30px 12px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-list-item {
+  border: 1px #fff;
+  text-transform: none;
+  text-align: center;
+  color: #0e354b;
+  background: transparent;
+}
+
+.card-list-item:hover {
+  font-size: 24px;
+}
+
+.card-list-item a {
+  color: #0e354b;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 931px) {
+  .list-group-item-info {
+    font-size: 14px;
+  }
+
+  .list-group-item-info:hover {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .list-group-item-info {
+    font-size: 12px;
+  }
+
+  .list-group-item-info:hover {
+    font-size: 14px;
+  }
+}
+.story-card {
+  text-align: center;
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: rgba(15, 14, 14, 0.705);
+}
+
+.full-size-img {
+  object-fit: cover;
+  box-shadow: 15px 15px 10px #575757;
+}
+
+.story-card h3 {
+  font-size: 50px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.story-card h5 {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+@media screen and (max-width: 930px) {
+  .story-card {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 931px) {
+  .story-card {
+    font-size: 18px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Source Sans Serif", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #ececec;
+}
+
+/*# sourceMappingURL=main.css.map */

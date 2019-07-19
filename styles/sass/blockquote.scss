@@ -1,0 +1,32 @@
+@import 'variables';
+
+.blockquote {
+  font-weight: 400;
+  font-family: "Operator Mono", "Courier New", monospace;
+  font-style: italic;
+  padding: 80px 0px 24px 0px;
+  margin: 50px;
+}
+
+.blockquote-footer {
+  font-style: normal;
+}
+
+@media screen and (min-width: $large_screen){
+  .blockquote {
+    font-size: 26px
+  }
+  .blockquote-footer {
+    font-size: 90%
+  }
+}
+
+@media screen and (max-width: $small_screen) {
+  .blockquote {
+    font-size: 18px;
+  }
+
+  .blockquote-footer {
+    font-size: 85%;
+  }
+}

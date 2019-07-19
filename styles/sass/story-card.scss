@@ -1,0 +1,32 @@
+@import 'variables';
+
+.story-card{
+    text-align: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    color: rgba(15, 14, 14, 0.705);
+}
+
+.full-size-img{
+    object-fit: cover;
+    box-shadow: 15px 15px 10px #575757;
+}
+.story-card h3 {
+    font-size: 50px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+.story-card h5 {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+@media screen and (max-width: $small_screen){
+    .story-card{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:$large_screen){
+    .story-card{
+        font-size: 18px;
+    }
+}
