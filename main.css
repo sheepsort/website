@@ -69,8 +69,7 @@
 }
 
 /* Personal description & welcome */
-/* TODO: need to refactor html with "welcome" instead of "description" */
-.description {
+.welcome {
   left: 50%;
   position: absolute;
   top: 45%;
@@ -78,45 +77,45 @@
   text-align: center;
 }
 
-.description h1 {
+.welcome h1 {
   font-size: 50px;
   font-family: "Lucida Console", Monaco, monospace;
   color: #fff;
 }
 
-.description p {
+.welcome p {
   color: #fff;
   line-height: 1.5;
 }
 
-.description button {
+.welcome button {
   border: 1px solid #56b8de;
   background: #56b8de;
   border-radius: 0;
   color: #fff;
 }
 
-.description button:hover {
+.welcome button:hover {
   border: 1px solid #fff;
   background: #fff;
   color: #000;
 }
 
 @media screen and (min-width: 931px) {
-  .description p {
+  .welcome p {
     font-size: 1.3rem;
   }
 
-  .description h1 {
+  .welcome h1 {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 930px) {
-  .description p {
+  .welcome p {
     font-size: 0.8rem;
   }
 
-  .description h1 {
+  .welcome h1 {
     font-size: 2rem;
   }
 }
