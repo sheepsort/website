@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Daftsort</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Loading Bootstrap...-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/cards.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-md">
+        <a class="navbar-brand" href="#">Daftsort</a>
+        <span class="navbar-text">By Jim Griffith</span>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#storyTag">My Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#techTag">Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactTag">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="page-header header container-fluid">
+        <div class="overlay"></div>
+        <div class="description">
+            <h1 id="homeTag"><b>Hey there!</b></h1>
+            <p>
+                My name is Jim, and I'm an aspiring software engineer.
+                <br>Please enjoy this Bootstrap-backed website I'm building!
+            </p>
+            <a href="#storyTag" class="btn btn-outline-secondary get-started-btn">Let's Begin</a>
+        </div>
+    </header>
+
+    <blockquote id ="storyTag" class="blockquote text-center">
+        <hr>
+        <p class="mb-0">"Humility is not thinking less of yourself - it is thinking of yourself less."</p>
+        <footer class="blockquote-footer">C.S. Lewis</footer>
+    </blockquote>
+
+    <div class="col-sm-12 text-center section-header">
+        <h1>My Story</h1>
+    </div>
+    <div class="card-group story-card">
+        <div class="card">
+            <img class="card-img full-size-img" src="images/story_one.jpg" alt="Card image">
+        </div>
+        <div class="card story-card">
+            <p class="card-text">
+                I have been a <strong>learner</strong> my entire life.
+            </p>
+            <p class="card-text">
+                In school, any subject that
+                <em>
+                    <font size="+2">challenged</font>
+                </em> me became my favorite. The material never mattered as much as the
+                opportunity to
+                <h3>
+                    grow.
+                </h3>
+            </p>
+        </div>
+    </div>
+
+    <div class="card-group story-card">
+        <div class="card story-card">
+            <p class="card-text">
+                When I worked in finance, our parent company discontinued the CRM we used for years.
+            </p>
+            <br>
+            <h5>As A Result:</h5>
+            <br>
+            <p class="card-text">We were faced with a short-term <b>
+                <font size="+2">G A P</font>
+            </b> in the flow of business-critical info.</p>
+        </div>
+        <div class="card">
+            <img class="card-img full-size-img" src="images/story_two.jpg" alt="Card image">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card-group story-card">
+        <div class="card story-card">
+            <p class="card-text">
+                That <b style="font-size:12px">gap</b> was a <h3 style="transform:skew(-3deg)"><b>PROBLEM.</b></h3>
+            </p>
+        </div>
+        <div class="card story-card">
+            <p class="card-text">
+                <h5><b style="font-size:24px">Life</b> is about</h5>
+                <h3 style="transform:skew(-3deg)"><b>SOLUTIONS.</b></h3>
+            </p>
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="card-group story-card">
+        <div class="card">
+            <img class="card-img full-size-img" src="images/gus-story.jpg" alt="Candid of Gus">
+        </div>
+        <div class="card story-card">
+            <p>
+                That <strike>problem</strike> became an <b>opportunity</b> for me to build an interactive Excel table to <b>FILL</b> the gap.
+            </p>
+            <p>
+                That spreadsheet became a full-blown<br>
+                <b style="font-size:20px">LOVE AFFAIR</b><br>
+                with creating tools that look good and get the job done.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card-group story-card">
+        <div class="card story-card">
+            <p class="card-text">
+                As I've pushed toward aligning passion with profession, I've pursued <em>every possible avenue</em> to
+                learn the industry:
+            </p>
+        </div>
+    </div>
+
+    <div class="card-group story-card">
+        <div class="card story-card" style="margin-left:14px;">
+            <p class="card-text">
+                <mark style="background-color:#f8ecda">Leveraging</mark> Pluralsight, Khan Academy, Coursera, and other online tools to build language-agnostic skills in data science and algorithms.
+            </p>
+        </div>
+        <div class="card story-card">
+            <p class="card-text">
+                <mark style="background-color:#f8ecda">Crafting</mark> full-stack projects to meet needs in my own life and get my hands on myriad languages and frameworks.
+            </p>
+        </div>
+        <div class="card story-card" style="margin-right:14px;">
+            <p class="card-text">
+                <mark style="background-color:#f8ecda">Engaging</mark> in school to earn a degree in Computer Information Systems with an emphasis on writing code and understanding the SDLC.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="card-group story-card">
+        <div class="card story-card">
+            <p class="card-text">
+                Through this journey, my <font style="font-size:24px">enthusiasm</font> and <font style="font-size:24px">excitement</font> for the future have flourished.
+            </p>
+            <p class="card-text">
+                I am confident my education, experience, and dedication will help us win more,
+                together.
+            </p>
+        </div>
+        <div class="card">
+            <img class="card-img full-size-img" src="images/story_four.jpg" alt="Card image">
+        </div>
+    </div>
+
+    <blockquote class="blockquote text-right" id="techTag">
+        <hr>
+        <p class="mb-0">"The man on top of the mountain didn't fall there."</p>
+        <footer class="blockquote-footer">Vince Lombardi</footer>
+    </blockquote>
+
+    <div class="col-sm-12 text-center" style="font-family:'Operator Mono'; font-style:italic;">
+        <h1>Tech Stack</h1>
+    </div>
+
+    <div class="card story-card">
+        <p class="card-text" style="padding-bottom: 50px">
+            I have dabbled in every part of the stack, but my main focus is on front-end development work. I enjoy working with React.js, and the tech I'm most excited about right now is GraphQL.
+        </p>
+    </div>
+ 
+    <div class="card-deck">
+        <div class="card">
+            <div class="text-center" style="background: #00793f">
+                <h5 class="card-title">Familiar With:</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item card-list-item">JavaScript</li>
+                    <li class="list-group-item card-list-item">HTML | CSS</li>
+                    <li class="list-group-item card-list-item">Bootstrap | jQuery</li>
+                    <li class="list-group-item card-list-item">My SQL | Oracle</li>
+                    <li class="list-group-item card-list-item">PHP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text-center" style="background: #d89b2a">
+                    <h5 class="card-title">Working On:</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item card-list-item">TypeScript</li>
+                        <li class="list-group-item card-list-item">React.js</li>
+                        <li class="list-group-item card-list-item">Sass | Less</li>
+                        <li class="list-group-item card-list-item">Apollo | GraphQL</li>
+                        <li class="list-group-item card-list-item">Gatsby | WordPress</li>
+                        <li class="list-group-item card-list-item">Azure | AWS | GCP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text-center" style="background: #0e354b">
+                <h5 class="card-title">Tools I Use:</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item card-list-item" ><a href="https://code.visualstudio.com/" target="_blank">VSCode</a></li>
+                    <li class="list-group-item card-list-item" ><a href="https://sipapp.io/" target="_blank">Sip App</a></li>
+                    <li class="list-group-item card-list-item" ><a href="https://www.sketch.com/" target="_blank">Sketch</a></li>
+                    <li class="list-group-item card-list-item" ><a href="https://marked2app.com/" target="_blank">Marked 2</a></li>
+                    <li class="list-group-item card-list-item" ><a href="https://github.com/sheepsort" target="_blank">GitHub</a></li>
+                    <li class="list-group-item card-list-item" ><a href="https://www.digitalocean.com/" target="_blank">DigitalOcean</a></li>
+                    <li class="list-group-item card-list-item" ><a href="https://hyper.is/" target="_blank">HyperTerm</a> | <a href="https://ohmyz.sh/" target="_blank">zsh</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <blockquote id="contactTag" class="blockquote text-left">
+        <p class="mb-0">"Change is inevitable. Growth is optional"</p>
+        <footer class="blockquote-footer">John Maxwell</footer>
+    </blockquote>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                    <p>
+                        In the last year, I made a profit on my farm, brushed up on my French, and lost thirty pounds.
+                    </p>
+                    <p>
+                        This coming year, I will grow my farm, visit France, and participate in a triathlon.
+                    </p>
+                    <p>
+                        I know a thing or two about setting - and achieving - goals. Let's start a dialogue about how I
+                        can help you!
+                    </p>
+                    <p>
+                        <br>
+                        <font style="color:#969696">This site was designed with Sketch and built with HTML,
+                            CSS-Bootstrap, and as little JavaScript as possible.</font>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6 class="text-uppercase font-weight-bold">Contact Me</h6>
+                    <p>
+                        Ames, Iowa
+                        <br /><a href="mailto:jim@sheepsort.com">jim@sheepsort.com</a>
+                        <br /><a href="https://www.linkedin.com/in/jim-griffith-ia/">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">© 2019 daftsort.com</div>
+    </footer>
+
+    <!--Loading jQuery & Bootstrap JavaScript...-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!--Loading personal JavaScript...-->
+    <script src="main.js"></script>
+</body>
+
+</html>
