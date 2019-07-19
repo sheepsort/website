@@ -1,0 +1,54 @@
+@import 'variables';
+.card {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-top: 24px;
+    background: transparent;
+}
+.card-group {
+    margin: 30px 12px 30px 12px;
+}
+.card-text{
+    text-align: center;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card-list-item {
+    border: 1px #fff;
+    text-transform: none;
+    text-align: center;
+    color: #0e354b;
+    background: transparent;
+}
+.card-list-item:hover {
+    font-size: 24px;
+}
+
+.card-list-item a {
+    color: #0e354b;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: $large_screen){
+    .list-group-item-info{
+        font-size:14px;
+    }
+    .list-group-item-info:hover{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: $small_screen){
+    .list-group-item-info{
+        font-size: 12px;
+    }
+    .list-group-item-info:hover {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,17 @@
+/*--- General positioning for background picture on launch screen ---*/
+.header {
+  background-image: url("images/header-background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Styling to mute the header image */
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 6, 24, 0.6);
+}
