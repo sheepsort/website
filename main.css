@@ -46,8 +46,8 @@
 }
 
 .get-started-btn:hover {
-  background: #85d9bf;
-  color: #646464;
+  background: #838381;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /*--- General positioning for background picture on launch screen ---*/
