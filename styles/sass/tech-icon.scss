@@ -32,6 +32,9 @@
     margin: 0;
     color: #fff;
   }
+  .tech-button:hover p {
+    color: #0f344b;
+  }
 
 @media screen and (min-width: $large_screen){
     .list-group-item-info{

@@ -192,7 +192,7 @@
 .card-title h5 {
   color: #585858;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: 5px;
   text-transform: none;
   text-align: center;
@@ -307,6 +307,14 @@ body {
 .tech-button p {
   margin: 0;
   color: #fff;
+}
+
+.tech-button:hover p {
+  color: #0f344b;
+}
+
+.tech-button a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 931px) {
