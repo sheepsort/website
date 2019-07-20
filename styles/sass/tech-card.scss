@@ -12,12 +12,21 @@
     text-align: center;
 }
 
-.card-title {
+.card-title h3 {
     color: #585858;
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px;
+    margin: 10px;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.card-title h5 {
+    color: #585858;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 5px;
+    text-transform: none;
     text-align: center;
 }
 
@@ -25,16 +34,12 @@
     color: #585858;
     border: none;
     text-transform: none;
-    text-align: center;
+    // text-align: center;
     background: transparent;
 }
 
 .list-group-item h4 {
     margin-bottom: 20px;
-}
-
-.card-body {
-    background: transparent;
 }
 
 @media screen and (min-width: $large_screen){

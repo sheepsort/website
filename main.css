@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
 .navbar {
-  background: #93928e;
+  background: #9c9d9f;
 }
 
 .nav-link,
@@ -180,25 +180,33 @@
   text-align: center;
 }
 
-.card-title {
+.card-title h3 {
   color: #585858;
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 20px;
+  margin: 10px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.card-title h5 {
+  color: #585858;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 5px;
+  text-transform: none;
   text-align: center;
 }
 
 .list-group-item {
   color: #585858;
-  border: 1px #585858;
+  border: none;
   text-transform: none;
-  text-align: center;
   background: transparent;
 }
 
-.card-body {
-  background: transparent;
+.list-group-item h4 {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 931px) {
@@ -270,7 +278,7 @@ body {
 }
 
 .tech-button {
-  background: #93928e;
+  background: #9c9d9f;
   margin: 0 20px 0 20px;
   text-align: center;
   display: inline-block;
