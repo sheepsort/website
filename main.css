@@ -47,7 +47,6 @@
 
 .get-started-btn:hover {
   background: #838381;
-  color: rgba(0, 0, 0, 0.5);
 }
 
 /*--- General positioning for background picture on launch screen ---*/
@@ -182,7 +181,7 @@
 }
 
 .card-title {
-  color: #fff;
+  color: #585858;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 20px;
@@ -190,21 +189,16 @@
   text-align: center;
 }
 
-.card-list-item {
-  border: 1px #fff;
+.list-group-item {
+  color: #585858;
+  border: 1px #585858;
   text-transform: none;
   text-align: center;
-  color: #0e354b;
   background: transparent;
 }
 
-.card-list-item:hover {
-  font-size: 24px;
-}
-
-.card-list-item a {
-  color: #0e354b;
-  text-decoration: underline;
+.card-body {
+  background: transparent;
 }
 
 @media screen and (min-width: 931px) {
@@ -266,6 +260,64 @@ body {
   padding: 0;
   margin: 0;
   background: #ececec;
+}
+
+.tech-icon {
+  width: 64px;
+  height: 64px;
+  animation-delay: 0.3s;
+  animation-duration: 1.5s;
+}
+
+.tech-button {
+  background: #93928e;
+  margin: 0 20px 0 20px;
+  text-align: center;
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  border: 2px solid #232425;
+  border-radius: 12px;
+  box-shadow: 0px 6px 5px grey;
+  transition: 0.25s;
+}
+
+.tech-button:focus {
+  outline: none;
+}
+
+.tech-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 5px grey;
+}
+
+.tech-button:active {
+  box-shadow: 0px 2px 5px grey;
+  transform: translateY(8px);
+}
+
+.tech-button p {
+  margin: 0;
+  color: #fff;
+}
+
+@media screen and (min-width: 931px) {
+  .list-group-item-info {
+    font-size: 14px;
+  }
+
+  .list-group-item-info:hover {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .list-group-item-info {
+    font-size: 12px;
+  }
+
+  .list-group-item-info:hover {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

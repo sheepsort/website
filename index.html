@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Daftsort</title>
+    <title>SheepSort</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Loading Animate.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!--Loading Bootstrap...-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -14,7 +16,7 @@
 
 <body>
     <nav class="navbar sticky-top navbar-expand-md">
-        <a class="navbar-brand" href="#">Daftsort</a>
+        <a class="navbar-brand" href="#">SheepSort</a>
         <span class="navbar-text">By Jim Griffith</span>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,10 +31,10 @@
                     <a class="nav-link" href="#storyTag">My Story</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#techTag">Tech</a>
+                    <a class="nav-link" href="#techTag">Tech Stack</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contactTag">Contact</a>
@@ -48,7 +50,7 @@
                 My name is Jim, and I'm an aspiring software engineer.
                 <br>Please enjoy this Bootstrap-backed website I'm building!
             </p>
-            <a href="#storyTag" class="btn btn-outline-secondary get-started-btn">Let's Begin</a>
+            <a href="#storyTag" class="btn btn-outline-secondary get-started-btn"><span>Let's Begin</span></a>
         </div>
     </header>
 
@@ -195,54 +197,107 @@
         </p>
     </div>
  
-    <div class="card-deck">
-        <div class="card">
-            <div class="text-center" style="background: #00793f">
-                <h5 class="card-title">Familiar With:</h5>
-            </div>
-            <div class="card-body">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item card-list-item">JavaScript</li>
-                    <li class="list-group-item card-list-item">HTML | CSS</li>
-                    <li class="list-group-item card-list-item">Sass | Less</li>
-                    <li class="list-group-item card-list-item">Bootstrap | jQuery</li>
-                    <li class="list-group-item card-list-item">My SQL | Oracle</li>
-                    <li class="list-group-item card-list-item">Git</li>
-                </ul>
-            </div>
+    <div class="card text-center">
+        <div class="card-body">
+          <ul class="inline-list">
+            <li class="list-group-item">
+              <h4>Web Development</h4>
+              <a class="tech-button" onclick="animateCSS('.javascriptIcon', 'shake')" href=#projects>
+                <p>JavaScript</p>
+                <img class="tech-icon" src="images/icons/javascript.svg">
+              </a>
+              <a class="tech-button" onclick="animateCSS('.htmlIcon', 'shake')" href=#projects>
+                <p>HTML 5</p>
+                <img class="tech-icon" src="images/icons/html5.svg">
+              </a>
+            </li>
+            <li class="list-group-item">
+              <h4>Frameworks</h4>
+              <a class="tech-button" onclick="animateCSS('.reactIcon', 'shake')" href=#projects>
+                <p>React</p>
+                <img class="tech-icon" src="images/icons/reactIcon.svg">
+              </a>
+              <a class="tech-button" onclick="animateCSS('.nextIcon', 'shake')" href=#projects>
+                <p>Next</p>
+                <img class="tech-icon" src="images/icons/nextIcon.svg">
+              </a>
+              <a class="tech-button" onclick="animateCSS('.nodeIcon', 'shake')" href=#projects>
+                <p>Node</p>
+                <img class="tech-icon" src="images/icons/nodeIcon.svg">
+              </a>
+              <a class="tech-button" onclick="animateCSS('.bootstrapIcon', 'shake')" href=#projects>
+                <p>Bootstrap</p>
+                <img class="tech-icon" src="images/icons/bootstrap.svg">
+              </a>
+            </li>
+            <li class="list-group-item">
+              <h4>Database Management</h4>
+              <a class="tech-button" onclick="animateCSS('.sqlIcon', 'shake')" href=#projects>
+                <p>MySQL</p>
+                <img class="tech-icon" src="images/icons/sqlIcon.svg">
+              </a>
+              <a class="tech-button" onclick="animateCSS('.oracleIcon', 'shake')" href=#projects>
+                <p>Oracle</p>
+                <img class="tech-icon" src="images/icons/reactIcon.svg">
+              </a>
+              <a class="tech-button" onclick="animateCSS('.mongoIcon', 'shake')" href=#projects>
+                <p>NoSQL</p>
+                <img class="tech-icon" src="images/icons/mongo.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="projects" class="text-center" style="margin-top:25px;">
+            <h3 class="card-title">Project List</h3>
+      </div>
+
+      <div class="card-deck" style="margin: 50px 15px 50px 15px">
+        <div class="card" style="background: transparent;">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sick Fits</h5>
+            <p class="card-text">
+              <ul class="list-group">
+                <li class="list-group-item text-left">
+                  Sick Fits is a fully-functioning online clothing store. It allows users to interact in traditional ways, including searching, selling, adding to card, and checking out. This was an incredibly fun project that involved myriad frameworks spanning the entire stack.
+                </li>
+                <li class="list-group-item text-left">
+                  While building Sick Fits, I had the chance to dig into Stripe's API and leverage Styled Components for the first time. 
+                </li>
+                <li class="list-group-item">
+                    <h5 class="text-center">Technology</h5>
+                </li>
+                <li class="list-group-item">
+                  <img src="images/icons/reactIcon.svg" alt="React JS" class="tech-icon reactIcon">
+                  <img src="images/icons/nextIcon.svg" alt="Next JS" class="tech-icon nextIcon">
+                  <img src="images/icons/javascript.svg" alt="JavaScript" class="tech-icon javascriptIcon">
+                  <img src="images/icons/mongo.svg" alt="Mongo DB" class="tech-icon mongoIcon">
+                  <img src="images/icons/html5.svg" alt="HTML 5" class="tech-icon htmlIcon">
+                  <img src="images/icons/nodeIcon.svg" alt="Node JS" class="tech-icon nodeIcon">
+                </li>
+                <li class="list-group-item" style="color: #9e9e9e">
+                    This site was developed through a tutorial that can be found at <a href="https://advancedreact.com" target="_blank">Advanced React</a>. Major props to Wes Bos for building a great program!
+                </li>
+              </ul>
+            </p>
+          </div>
         </div>
         <div class="card">
-            <div class="text-center" style="background: #d89b2a">
-                    <h5 class="card-title">Working On:</h5>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item card-list-item">TypeScript</li>
-                        <li class="list-group-item card-list-item">React.js</li>
-                        <li class="list-group-item card-list-item">PHP</li>
-                        <li class="list-group-item card-list-item">Apollo | GraphQL</li>
-                        <li class="list-group-item card-list-item">Gatsby | WordPress</li>
-                        <li class="list-group-item card-list-item">Azure | AWS | GCP</li>
-                </ul>
-            </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Catch of the Day</h5>
+            <p class="card-text">
+                This project was a launchpoint to begin learning the React JavaScript framework.
+            </p>
+            <h6>Technologies Used</h6>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <img src="images/icons/reactIcon.svg" alt="React JS" class="tech-icon reactIcon">
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-            <div class="text-center" style="background: #0e354b">
-                <h5 class="card-title">Tools I Use:</h5>
-            </div>
-            <div class="card-body">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item card-list-item" ><a href="https://code.visualstudio.com/" target="_blank">VSCode</a></li>
-                    <li class="list-group-item card-list-item" ><a href="https://sipapp.io/" target="_blank">Sip App</a></li>
-                    <li class="list-group-item card-list-item" ><a href="https://www.sketch.com/" target="_blank">Sketch</a></li>
-                    <li class="list-group-item card-list-item" ><a href="https://marked2app.com/" target="_blank">Marked 2</a></li>
-                    <li class="list-group-item card-list-item" ><a href="https://github.com/sheepsort" target="_blank">GitHub</a></li>
-                    <li class="list-group-item card-list-item" ><a href="https://www.digitalocean.com/" target="_blank">DigitalOcean</a></li>
-                    <li class="list-group-item card-list-item" ><a href="https://hyper.is/" target="_blank">HyperTerm</a> | <a href="https://ohmyz.sh/" target="_blank">zsh</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+      </div>
 
     <blockquote id="contactTag" class="blockquote text-left">
         <p class="mb-0">"Change is inevitable. Growth is optional"</p>
