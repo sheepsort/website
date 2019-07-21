@@ -20,6 +20,8 @@ function animateCSS(element, animationName, callback) {
     nodeList[k].addEventListener('animationend', endAnimation)
   }
 }
+document.getElementById("jsButton").addEventListener("click", function() {applyGrayscale('javascriptIcon');});
+document.getElementById("jsButton").addEventListener("click", function(){animateCSS('.javascriptIcon', 'shake');})
 function applyGrayscale(keepsColor) {
   var colorlessElements = document.querySelectorAll('.tech-icon');
 
@@ -37,4 +39,12 @@ function applyGrayscale(keepsColor) {
   }, 7000);
 }
 
+// function grayscale() {
+//   var icon = querySelectorAll('.tech-icon');
+//   for (var i=0; i < icon.length; i++){
+//     var iconID = icon[i].id;
+//     document.getElementById(iconID).addEventListener("click", function(){
 
+//     });
+//   }
+// }

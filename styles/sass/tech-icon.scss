@@ -1,4 +1,6 @@
 @import 'variables';
+
+//Icon image in buttons and under project tech lists
 .tech-icon{
   width: 64px;
   height: 64px;
@@ -7,6 +9,8 @@
   padding: 6px;
   transition: 3s;
 }
+
+//Info on the button itself, including spacing
 .tech-button {
   padding: 2px 14px 8px 14px;
   background: #d2d2d2;
@@ -20,17 +24,25 @@
   box-shadow: 0px 6px 5px grey;
   transition: 0.25s;
 }
+
+//Make sure there's no outline when a button is pushed
 .tech-button:focus {
   outline: none;
 }
+
+//Add emphasis to moused-over button
 .tech-button:hover {
   transform: translateY(-4px);
   box-shadow: 0px 10px 5px grey;
 }
+
+//Push button animation
 .tech-button:active {
   box-shadow: 0px 2px 5px grey;
   transform: translateY(8px);
 }
+
+//Invisible label text for each software that becomes visible on mouseover
 .tech-button p{
   margin: 0;
   color: #585858;
@@ -39,37 +51,10 @@
   font-size: 14px;
 }
 .tech-button:hover p {
-  // color: #fff;
   opacity: 1;
 }
 
-.tech-wrapper {
-  display: inline-block;
-  width: 64px;
-  color: #fff;
-  background: transparent;
-  transition: all 0.2s;
-}
-.tech-wrapper p {
-  opacity: 0;
-}
-.tech-wrapper:hover p {
-  opacity: 1;
-}
-
-@media screen and (min-width: $large_screen){
-    .list-group-item-info{
-        font-size:14px;
-    }
-    .list-group-item-info:hover{
-        font-size: 16px;
-    }
-  }
-  @media screen and (max-width: $small_screen){
-    .list-group-item-info{
-      font-size: 12px;
-    }
-    .list-group-item-info:hover {
-        font-size: 14px;
-    }
+//Remove underline on mouseover of links in the buttons
+.list-group-item a {
+  text-decoration: none;
 }

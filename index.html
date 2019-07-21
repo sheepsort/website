@@ -64,8 +64,8 @@
         <h1>My Story</h1>
     </div>
     <div class="card-group story-card">
-        <div class="card">
-            <img class="card-img full-size-img" src="images/story_one.jpg" alt="Card image">
+        <div class="card story-card">
+            <img class="card-img story-img" src="images/story_one.jpg" alt="Card image">
         </div>
         <div class="card story-card">
             <p class="card-text">
@@ -96,8 +96,8 @@
                 <font size="+2">G A P</font>
             </b> in the flow of business-critical info.</p>
         </div>
-        <div class="card">
-            <img class="card-img full-size-img" src="images/story_two.jpg" alt="Card image">
+        <div class="card story-card">
+            <img class="card-img story-img" src="images/story_two.jpg" alt="Card image">
         </div>
     </div>
 
@@ -120,8 +120,8 @@
     <hr>
 
     <div class="card-group story-card">
-        <div class="card">
-            <img class="card-img full-size-img" src="images/gus-story.jpg" alt="Candid of Gus">
+        <div class="card story-card">
+            <img class="card-img story-img" src="images/gus-story.jpg" alt="Candid of Gus">
         </div>
         <div class="card story-card">
             <p>
@@ -176,8 +176,8 @@
                 together.
             </p>
         </div>
-        <div class="card">
-            <img class="card-img full-size-img" src="images/story_four.jpg" alt="Card image">
+        <div class="card story-card">
+            <img class="card-img story-img" src="images/story_four.jpg" alt="Card image">
         </div>
     </div>
 
@@ -194,61 +194,61 @@
           <ul class="list-group">
             <li class="list-group-item">
               <h4>Web Development</h4>
-              <a class="tech-button" onclick="animateCSS('.javascriptIcon', 'shake'); applyGrayscale('javascriptIcon');" href=#projects style="text-decoration: none">
+              <a id="jsButton" class="tech-button" href=#projects>
                 <p>JavaScript</p>
                 <img class="tech-icon" src="images/icons/javascript.svg">
               </a>
-              <a class="tech-button" onclick="animateCSS('.htmlIcon', 'shake')" href=#projects style="text-decoration: none">
+              <a id="htmlButton" class="tech-button" onclick="animateCSS('.htmlIcon', 'shake')" href=#projects>
                 <p>HTML5</p>
                 <img class="tech-icon" src="images/icons/html5.svg">
               </a>
-              <a class="tech-button" onclick="animateCSS('.cssIcon', 'shake')" href=#projects style="text-decoration: none">
+              <a class="tech-button" onclick="animateCSS('.cssIcon', 'shake')" href=#projects>
                 <p>CSS3</p>
                 <img class="tech-icon" src="images/icons/css3.svg">
               </a>
-              <a class="tech-button" onclick="animateCSS('.sassIcon', 'shake')" href=#projects style="text-decoration: none">
+              <a class="tech-button" onclick="animateCSS('.sassIcon', 'shake')" href=#projects>
                 <p>Sass</p>
                 <img class="tech-icon" src="images/icons/sass.svg">
               </a>
-              <a class="tech-button" onclick="animateCSS('.typescriptIcon', 'shake')" href=#projects style="text-decoration: none">
+              <a class="tech-button" onclick="animateCSS('.typescriptIcon', 'shake')" href=#projects>
                     <p>TypeScript</p>
                     <img class="tech-icon" src="images/icons/typescript.svg">
                 </a>
             </li>
             <li class="list-group-item">
                 <h4>Frameworks & APIs</h4>
-                <a class="tech-button" onclick="animateCSS('.reactIcon', 'shake'); applyGrayscale('reactIcon');" href=#projects style="text-decoration: none">
+                <a class="tech-button" onclick="animateCSS('.reactIcon', 'shake'); applyGrayscale('reactIcon');" href=#projects>
                     <p>React</p>
                     <img class="tech-icon" src="images/icons/reactIcon.svg">
                 </a>
-                <a class="tech-button" onclick="animateCSS('.jqueryIcon', 'shake')" href=#projects style="text-decoration: none">
+                <a class="tech-button" onclick="animateCSS('.jqueryIcon', 'shake')" href=#projects>
                     <p>jQuery</p>
                     <img class="tech-icon" src="images/icons/jquery.svg">
                 </a>
-                <a class="tech-button" onclick="animateCSS('.bootstrapIcon', 'shake')" href=#projects style="text-decoration: none">
+                <a class="tech-button" onclick="animateCSS('.bootstrapIcon', 'shake')" href=#projects>
                     <p>Bootstrap</p>
                     <img class="tech-icon" src="images/icons/bootstrap.svg">
                 </a>
-                <a class="tech-button" onclick="animateCSS('.nextIcon', 'shake')" href=#projects style="text-decoration: none">
+                <a class="tech-button" onclick="animateCSS('.nextIcon', 'shake')" href=#projects>
                     <p>Next</p>
                     <img class="tech-icon" src="images/icons/nextIcon.svg">
                 </a>
-                <a class="tech-button" onclick="animateCSS('.nodeIcon', 'shake')" href=#projects style="text-decoration: none">
+                <a class="tech-button" onclick="animateCSS('.nodeIcon', 'shake')" href=#projects>
                     <p>Node</p>
                     <img class="tech-icon" src="images/icons/nodeIcon.svg">
                 </a>
-                <a class="tech-button" onclick="animateCSS('.graphqlIcon', 'shake')" href=#projects style="text-decoration: none">
+                <a class="tech-button" onclick="animateCSS('.graphqlIcon', 'shake')" href=#projects>
                     <p>GraphQL</p>
                     <img class="tech-icon" src="images/icons/graphql.svg">
                 </a>
             </li>
             <li class="list-group-item">
               <h4>Database Management</h4>
-              <a class="tech-button" onclick="animateCSS('.sqlIcon', 'shake')" href=#projects style="text-decoration: none">
+              <a class="tech-button" onclick="animateCSS('.sqlIcon', 'shake')" href=#projects>
                 <p>SQL</p>
                 <img class="tech-icon" src="images/icons/sqlIcon.svg">
               </a>
-              <a class="tech-button" onclick="animateCSS('.mongoIcon', 'shake')" href=#projects style="text-decoration: none">
+              <a class="tech-button" onclick="animateCSS('.mongoIcon', 'shake')" href=#projects>
                 <p>NoSQL</p>
                 <img class="tech-icon" src="images/icons/mongo.svg">
               </a>
@@ -370,7 +370,7 @@
                     <p>
                         Ames, Iowa
                         <br /><a href="mailto:jim@sheepsort.com">jim@sheepsort.com</a>
-                        <br /><a href="https://www.linkedin.com/in/jim-griffith-ia/">LinkedIn</a>
+                        <br /><a href="https://www.linkedin.com/in/jim-griffith-ia/" target="_blank">LinkedIn</a>
                     </p>
                 </div>
             </div>

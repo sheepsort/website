@@ -41,20 +41,3 @@
 .list-group-item h4 {
     margin-bottom: 20px;
 }
-
-@media screen and (min-width: $large_screen){
-    .list-group-item-info{
-        font-size:14px;
-    }
-    .list-group-item-info:hover{
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: $small_screen){
-    .list-group-item-info{
-        font-size: 12px;
-    }
-    .list-group-item-info:hover {
-        font-size: 14px;
-    }
-}
