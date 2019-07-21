@@ -20,8 +20,13 @@ function animateCSS(element, animationName, callback) {
     nodeList[k].addEventListener('animationend', endAnimation)
   }
 }
-document.getElementById("jsButton").addEventListener("click", function() {applyGrayscale('javascriptIcon');});
-document.getElementById("jsButton").addEventListener("click", function(){animateCSS('.javascriptIcon', 'shake');})
+
+const techButtons = Object.values(document.getElementsByClassName("tech-button"));
+techButtons.forEach(button => button.addEventListener("click", function() {
+	applyGrayscale(this.dataset.icon); 
+	animateCSS(this.dataset.icon, 'shake')
+}));
+
 function applyGrayscale(keepsColor) {
   var colorlessElements = document.querySelectorAll('.tech-icon');
 
