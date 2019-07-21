@@ -12,8 +12,9 @@
     display: inline-block;
     width: 96px;
     height: 96px;
-    border: 2px solid #232425;
-    border-radius: 12px;
+    border: 0px;
+    // border: 2px solid #232425;
+    border-radius: 14px;
     box-shadow: 0px 6px 5px grey;
     transition: 0.25s;
   }
@@ -31,9 +32,12 @@
   .tech-button p{
     margin: 0;
     color: #fff;
+    opacity: 0;
+    transition: all 0.2s;
   }
   .tech-button:hover p {
     color: #0f344b;
+    opacity: 1;
   }
 
 @media screen and (min-width: $large_screen){
