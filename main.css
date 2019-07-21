@@ -279,7 +279,7 @@ body {
 
 .tech-button {
   background: #9c9d9f;
-  margin: 0 20px 0 20px;
+  margin: 4px 20px 4px 20px;
   text-align: center;
   display: inline-block;
   width: 96px;
@@ -290,30 +290,36 @@ body {
   transition: 0.25s;
 }
 
-.tech-button:focus {
-  outline: none;
-}
-
 .tech-button:hover {
   transform: translateY(-4px);
   box-shadow: 0px 10px 5px grey;
 }
 
 .tech-button:active {
-  box-shadow: 0px 2px 5px grey;
-  transform: translateY(8px);
+  box-shadow: 0px;
+  transform: translateY(10px);
+  border-style: light;
 }
 
-.tech-button p {
-  margin: 0;
-  color: #fff;
+.tech-button-wrapper {
+  text-align: center;
+  display: inline-block;
+}
+
+.tech-button-wrapper:focus {
+  outline: none;
+}
+
+.tech-button-wrapper p {
+  margin: 4px;
   opacity: 0;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
-.tech-button:hover p {
-  color: #0f344b;
+.tech-button-wrapper:hover p {
   opacity: 1;
+  color: #585858;
 }
 
 @media screen and (min-width: 931px) {
