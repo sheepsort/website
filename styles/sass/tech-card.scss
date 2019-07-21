@@ -12,43 +12,32 @@
     text-align: center;
 }
 
-.card-title {
-    color: #fff;
+.card-title h3 {
+    color: #585858;
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px;
+    margin: 10px;
     text-transform: uppercase;
     text-align: center;
 }
-.card-list-item {
-    border: 1px #fff;
+
+.card-title h5 {
+    color: #585858;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 5px;
     text-transform: none;
     text-align: center;
-    color: #0e354b;
+}
+
+.list-group-item {
+    color: #585858;
+    border: none;
+    text-transform: none;
+    // text-align: center;
     background: transparent;
 }
-.card-list-item:hover {
-    font-size: 24px;
-}
 
-.card-list-item a {
-    color: #0e354b;
-    text-decoration: underline;
-}
-
-@media screen and (min-width: $large_screen){
-    .list-group-item-info{
-        font-size:14px;
-    }
-    .list-group-item-info:hover{
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: $small_screen){
-    .list-group-item-info{
-        font-size: 12px;
-    }
-    .list-group-item-info:hover {
-        font-size: 14px;
-    }
+.list-group-item h4 {
+    margin-bottom: 20px;
 }
