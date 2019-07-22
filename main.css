@@ -51,7 +51,7 @@
 
 /*--- General positioning for background picture on launch screen ---*/
 .header {
-  background-image: url("images/header-background.jpg");
+  background-image: url("images/ewes.gif");
   background-size: cover;
   background-position: center;
   position: relative;
